@@ -19,6 +19,8 @@ services:
       - mongodb:mongodb
     environment:
       DEBUG: 'true'
+    stdin_open: true
+    tty: true
   
 volumes:
   db-mong:
