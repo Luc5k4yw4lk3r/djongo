@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'apps.cards', 
-    'apps.decks'
+    'apps.musics', 
+    'apps.right_owners'
 ]
 
 MIDDLEWARE = [
@@ -88,6 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'db-mongo',
+        'CLIENT': {
+            'host': 'mongodb://mongodb:27017',
+        }
     }
 }
 

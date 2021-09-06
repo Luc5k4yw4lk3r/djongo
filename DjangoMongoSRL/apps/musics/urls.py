@@ -1,7 +1,7 @@
 from rest_framework import routers, urlpatterns
-from .views import CardsViewSet
+from .views import MusicsViewSet
 
 router = routers.SimpleRouter()
-router.register('', CardsViewSet)
+router.register('', MusicsViewSet)
 
 urlpatterns = router.urls

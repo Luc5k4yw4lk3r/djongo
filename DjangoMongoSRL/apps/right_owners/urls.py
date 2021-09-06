@@ -1,7 +1,7 @@
 from rest_framework import routers, urlpatterns
-from .views import DecksViewSet
+from .views import RightOwnersViewSet
 
 router = routers.SimpleRouter()
-router.register('', DecksViewSet)
+router.register('', RightOwnersViewSet)
 
 urlpatterns = router.urls
