@@ -4,4 +4,4 @@ from .models import RightOwner
 class RightOwnerSerializer(serializers.ModelSerializer):
     class Meta:
         model = RightOwner
-        fields = '__all__'
+        fields = ['name', 'role', 'ipi']
