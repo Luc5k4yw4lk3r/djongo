@@ -1,6 +1,6 @@
 from django.db import models
 from apps.right_owners.models import RightOwner
-#from apps.decks.models import RightOwners
+# from apps.decks.models import RightOwners
 
 
 SOURCE_TYPES = (
@@ -13,12 +13,9 @@ SOURCE_TYPES = (
 
 
 class Music(models.Model):
-    _id = models.CharField(max_length=100, help_text="Internal work id assigned by the society that provided the file.")
+    id_society = models.CharField(max_length=100, help_text="Internal work id assigned by the society that provided the file.")
     iswc = models.CharField(max_length=100, help_text="International Standard Musical Work Code")
     right_owner = models.ManyToManyField(RightOwner)
-    
-    def __str__(self) -> str:
-        return 'Id Society: {} ISWC: {}'.format(self._id, self.iswc)
 
 
 class Title(models.Model):

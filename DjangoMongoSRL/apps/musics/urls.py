@@ -3,6 +3,6 @@ from .views import MusicsViewSet, TitlesViewSet
 
 router = routers.SimpleRouter()
 router.register('', MusicsViewSet)
-#router.register('title', TitlesViewSet)
+# router.register('title', TitlesViewSet)
 
 urlpatterns = router.urls
