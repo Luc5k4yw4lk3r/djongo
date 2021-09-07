@@ -88,9 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'db-mongo',
-        # 'CLIENT': {
-        #     'host': 'mongodb://mongodb:27017',
-        # }
+        'CLIENT': {
+            'host': 'mongodb://mongodb:27017',
+        }
     }
 }
 
