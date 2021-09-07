@@ -1,6 +1,5 @@
 from django.db import models
 from apps.right_owners.models import RightOwner
-# from apps.decks.models import RightOwners
 
 
 SOURCE_TYPES = (
